@@ -52,7 +52,7 @@ export const TextProvider:React.FC<textcontextProps> = ({children}) => {
                 </div>
                 <form onSubmit={handleSubmit}>
                     <textarea
-                    rows={24}
+                    rows={20}
                     className='w-full border bg-black/5 p-5 border-white/10 outline-none rounded-b font-monoSpace'
                     value={textValue}
                     onChange={handleChange}
