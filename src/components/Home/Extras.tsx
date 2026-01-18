@@ -11,8 +11,8 @@ export const Extras = () => {
       <h1 className="w-full text-center pointer-events-none bg-linear-to-b from-white to-gray-300/80 bg-clip-text  text-4xl leading-none whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10 font-bold my-10">
         Here is a little more about me
       </h1>
-      <div className="grid  grid-cols-3 gap-5 ">
-        <div className="w-full h-fit relative col-span-2 ">
+      <div className="flex flex-col md:grid grid-cols-1 lg:grid-cols-3 gap-5 ">
+        <div className="w-full h-100 md:h-full relative md:col-span-2 ">
           <div className="absolute top-0 left-0 bottom-0 right-0 bg-linear-to-b from-black/0 to-black  ">
             <p className="text-5xl font-bold absolute bottom-10 left-5 z-10 ">Interests</p>
           </div>
@@ -25,22 +25,24 @@ export const Extras = () => {
           />
         </div>
 
-        <div className="w-full bg-[#495F41] rounded relative flex flex-col justify-end  p-5">
-          <p className="text-2xl">Learning:</p>
-          <h3 className="text-start font-bold text-5xl">
-            The Complete JavaScript Course 2025: From Zero to Expert!
-          </h3>
-          <div className="absolute w-[150px] h-[150px] top-10 left-[80%]">
+        <div className="w-full h-full bg-[#495F41] rounded relative flex flex-col justify-end  p-5 gap-5">
+          
+          <div className="relative md:absolute h-1/4 md:w-[150px] md:h-[150px] md:top-10 md:left-[80%]">
             <Image
               src={js}
               alt="extra"
               width={600}
               height={600}
-              className="rounded object-fit h-full w-full"
+              className="rounded object-fit h-full w-full "
             />
+            
           </div>
+          <p className="text-2xl">Learning:</p>
+          <h3 className="text-start font-bold text-5xl">
+            The Complete JavaScript Course 2025: From Zero to Expert!
+          </h3>
         </div>
-        <div className="h-full relative w-full grid grid-cols-3 gap-5 col-span-3">
+        <div className="h-full relative w-full grid md:grid-cols-3 gap-5 col-span-3">
           <div className="h-full ">
             <p className="text-white text-3xl">Experience</p>
             <iframe

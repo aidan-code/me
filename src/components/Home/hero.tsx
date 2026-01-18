@@ -8,7 +8,7 @@ import { Meteors } from "@/components/ui/meteors";
 
 const hero = () => {
   return (
-    <div className="h-[50vh] flex flex-col items-center justify-center bg-black">
+    <div className="h-[50vh]  md:h-[30vh] flex flex-col items-center justify-end bg-black">
       <div className="flex flex-col items-center md:flex-row gap-10 justify-between w-full">
         {/* <p>I am</p> */}
         <Meteors number={20} />
@@ -17,7 +17,7 @@ const hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 3 }}
         >
-          <h1 className=" w-full font-light pointer-events-none bg-linear-to-b from-white to-gray-300/80 bg-clip-text md:text-start text-5xl md:text-8xl leading-none whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10 text-center">
+          <h1 className=" w-full font-light pointer-events-none bg-linear-to-b from-white to-gray-300/80 bg-clip-text md:text-start text-5xl md:text-5xl leading-none whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10 text-center">
             Ademola <br />
             <span className="font-bold">Adegbamigbe</span>
           </h1>

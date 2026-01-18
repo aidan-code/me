@@ -4,7 +4,9 @@ import LocalFont from "next/font/local";
 import "./globals.css";
 import localFont from "next/font/local";
 import { Navigation } from "@/components/Navigation";
-import Dock from "@/components/Dock";
+import { TextProvider } from "@/context/TextContext";
+import Editor from "@/components/Editor";
+// import Dock from "@/components/Dock";
 
 const myFont = localFont({
   src: "../fonts/CodecPro-Regular.ttf",
@@ -29,9 +31,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${myFont.variable} antialiased relative bg-black text-white`}>
-        <Navigation />
-        {children}
-        <Dock />
+        <TextProvider>
+          <Navigation />
+          {children}
+          {/* <Dock /> */}
+        </TextProvider>
       </body>
     </html>
   );

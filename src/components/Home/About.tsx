@@ -5,12 +5,12 @@ import { motion } from "motion/react";
 
 export const About = () => {
   return (
-    <div className="w-full flex items-center justify-center  my-10">
+    <div className="w-full   flex items-center  justify-start text-justify  my-10">
       <motion.p
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-gray-300 text-center md:text-center w-[90%]"
+        className="text-gray-300 text-center md:text-justify"
       >
         I’m a frontend developer passionate about building user-centric solutions that just work —
         beautifully and reliably across devices. My focus is on responsive design, accessibility,
