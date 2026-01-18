@@ -24,7 +24,7 @@ export const TextProvider:React.FC<textcontextProps> = ({children}) => {
     const [showState, setShowState] = useState(false)
     const [textValue, setTextValue] = useState("Hello Ademola, I'm ...")
     const showEditor = () => {
-        setShowState(true)
+        setShowState(!showState)
     }
 
     const handleChange = (e:React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -58,7 +58,7 @@ export const TextProvider:React.FC<textcontextProps> = ({children}) => {
                     onChange={handleChange}
                     />
                     <div className="flex justify-center gap-2">
-                    <button className='px-5 py-3 bg-[#495F41] text-white rounded font-bold cursor-pointer'>Close</button>
+                    <button className='px-5 py-3 bg-[#495F41] text-white rounded font-bold cursor-pointer' onClick={() => showEditor()}>Close</button>
                     <button className='px-5 py-3 bg-white text-[#495F41] rounded font-bold cursor-pointer'>Submit</button>
                     </div>
                 </form>

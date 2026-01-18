@@ -11,6 +11,7 @@ import react from "../../../public/logos/stacks/react.svg";
 import next from "../../../public/logos/stacks/next.svg";
 import node from "../../../public/logos/stacks/node.svg";
 import Python from "../../../public/logos/stacks/python.svg";
+import Cypress from "../../../public/logos/stacks/cypress.svg"
 
 export const Stacks = () => {
   const logos = [
@@ -23,13 +24,14 @@ export const Stacks = () => {
     { logo: next, name: "next" },
     { logo: node, name: "node" },
     { logo: Python, name: "Python" },
+    {logo:Cypress, name:"cypress"}
   ];
   return (
     <div className="rounded flex flex-wrap gap-10 justify-around my-24 bg-white/10 p-10 lg:rounded-xl backdrop-blur-md">
       {logos.map((logo, index) => (
         <div
           className={` rounded-full ${
-            logo?.name === "next" ? "bg-white border border-white" : "bg-transparent"
+            logo?.name === "next" || logo?.name ==="cypress" ? "bg-white border border-white" : "bg-transparent"
           }`}
           key={index}
         >
