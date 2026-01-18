@@ -5,7 +5,6 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { Navigation } from "@/components/Navigation";
 import { TextProvider } from "@/context/TextContext";
-import Editor from "@/components/Editor";
 // import Dock from "@/components/Dock";
 
 const myFont = localFont({
@@ -32,9 +31,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${myFont.variable} antialiased relative bg-black text-white`}>
         <TextProvider>
-          <Navigation />
-          {children}
-          {/* <Dock /> */}
+        <Navigation />
+        {children}
+        {/* <Dock /> */}
         </TextProvider>
       </body>
     </html>
