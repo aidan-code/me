@@ -15,11 +15,14 @@ export const Navigation = () => {
         </div>
 
         <div className="flex gap-3">
-          <button className="text-white font-bold text-sm bg-[#495F41] px-4 py-2 rounded flex items-center justify-between cursor-pointer" onClick={() => showEditor()}>
+          {/* <button className="text-white font-bold text-sm bg-[#495F41] px-4 py-2 rounded flex items-center justify-between cursor-pointer" onClick={() => showEditor()}>
             <BoltIcon className="h-5" />
             <span className="hidden md:block text-nowrap">Tell me what you want to build</span>
-          </button>
-          <Link href="mailto:ademadegbamigbe@gmail.com" className="text-white font-bold text-sm flex items-center justify-between px-4 py-2 rounded gap-2">
+          </button> */}
+          <Link
+            href="mailto:ademadegbamigbe@gmail.com"
+            className="text-white font-bold text-sm flex items-center justify-between px-4 py-2 rounded gap-2"
+          >
             <EnvelopeIcon className="h-5" />
             <span className="text-nowrap">Email</span>
           </Link>
